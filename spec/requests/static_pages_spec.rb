@@ -5,7 +5,7 @@ describe "StaticPages" do
 	describe "Home page" do
 
 		it "should have the title 'Welcome'" do
-			visit 'static_pages/home'
+			visit '/static_pages/home'
 			expect(page).to have_title('Welcome')
 		end
 
@@ -18,8 +18,9 @@ describe "StaticPages" do
 	describe "Photography" do
 
 		it "should have the title 'Photography'" do
-			visit 'static_pages/photographs'
+			visit '/static_pages/photographs'
 			expect(page).to have_title('Photography')
+		end
 
 		it "should have the content 'Photographs'" do
 	  		visit '/static_pages/photographs'
@@ -30,7 +31,7 @@ describe "StaticPages" do
 	describe "About page" do
 
 		it "should have the title 'About'" do
-			visit 'static_pages/about'
+			visit '/static_pages/about'
 			expect(page).to have_title('About')
 		end
 
@@ -43,7 +44,7 @@ describe "StaticPages" do
 	describe "Contact" do
 
 		it "should have the title 'Contact'" do
-			visit 'static_pages/contact'
+			visit '/static_pages/contact'
 			expect(page).to have_title('Contact')
 		end
 
